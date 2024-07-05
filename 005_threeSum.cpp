@@ -2,9 +2,9 @@
 using namespace std;
 // not working
 int main(){
-  int arr[5] = {1,2,3,4,5};
-  int size = 5;
-  int sum = 12;
+  int arr[6] = {-4,-1,-1,0,1,2};
+  int size = 6;
+  int sum = 0;
 
   vector<vector<int> > ans;
 
@@ -12,24 +12,17 @@ int main(){
   int j=size-1;
 
   while(i<j){
-    if(arr[i] + arr[j] < sum){
-      for(int x=i+1; x<j-1; x++){
-        if(arr[i] + arr[j] + arr[x] == sum){
-          vector<int> temp;
-          temp.push_back(arr[i]);
-          temp.push_back(arr[j]);
-          temp.push_back(arr[x]);
-          ans.push_back(temp);
-        }
+    for(int mid=i+1; mid<j; mid++){
+      if(arr[i] + arr[j] + arr[mid] == sum){
+        vector<int> temp;
+        temp.push_back(arr[i]);
+        temp.push_back(arr[mid]);
+        temp.push_back(arr[j]);
+        ans.push_back(temp);
       }
-    }
-    else{
-      j--;
     }
     i++;
   }
-
-  cout << "working";
 
   for(int i=0; i<ans.size(); i++){
     cout << "[";
