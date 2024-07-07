@@ -53,9 +53,9 @@ int getDistance(int arr[], int size, int cows){
 }
 
 int main(){
-  int arr[5] = {4,2,1,3,6};
-  int size = 5;
-  int cows = 2;
+  int arr[9] = {4,2,1,3,6,8,10,12,15};
+  int size = 9;
+  int cows = 4;
 
   int ans = getDistance(arr, size, cows);
 
