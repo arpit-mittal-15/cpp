@@ -16,4 +16,6 @@ int main(){
     n = n/2;
   }
   cout << binaryForm << endl;
+
+  main();
 }

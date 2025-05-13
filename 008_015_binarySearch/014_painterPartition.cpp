@@ -45,8 +45,8 @@ int painterPartition(int arr[], int size, int painters){
 }
 
 int main(){
-  int arr[6] = {2, 1, 5, 6, 2, 3};
-  int size = 6;
+  int arr[4] = {12,34,67,90};
+  int size = 4;
   int painters = 2;
 
   int ans = painterPartition(arr, size, painters);

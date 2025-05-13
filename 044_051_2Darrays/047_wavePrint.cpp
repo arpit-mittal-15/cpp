@@ -8,7 +8,7 @@ void printWave(int arr[][4], int rows, int cols){
         cout << arr[j][i] << " ";
       }
       else{
-        cout << arr[j][rows-i-1] << " ";
+        cout << arr[rows-j-1][i] << " ";
       }
     }
   }
